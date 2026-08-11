@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/format-rank-table.json",
+  "title": "Format-Rank Table (unordered formats)",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entry" },
+      "uniqueItems": true
+    }
+  },
+  "required": ["entries"],
+  "additionalProperties": false,
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "array",
+          "description": "Unordered triple of positive integers, stored sorted ascending by convention so equivalent formats have a unique representation.",
+          "items": { "type": "integer", "minimum": 2 },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "rank": {
+          "type": "integer",
+          "minimum": 7
+        },
+        "exponent": {
+          "type": "number",
+          "minimum": 2,
+          "maximum": 3,
+          "description": "Exponent of matrix multiplication complexity for this format."
+        }
+      },
+      "required": ["format", "rank", "exponent"],
+      "additionalProperties": false
+    }
+  }
+}
