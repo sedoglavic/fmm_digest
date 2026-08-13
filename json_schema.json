@@ -7,6 +7,11 @@
     "description": {
       "type": "string"
     },
+    "source": {
+		"type": "string",
+      		"format": "uri",
+      		"description": "URL of a website presenting/documenting this data."
+    	},
     "entries": {
       "type": "array",
       "items": { "$ref": "#/$defs/entry" },
