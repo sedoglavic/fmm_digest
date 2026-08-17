@@ -1,7 +1,9 @@
 {
- "description": "Table of known Tensor decomposition ranks and associated complexity exponents indexed by unordered matrix multiplication formats (sorted ascending by convention)",
- "source": "https://fmm.univ-lille.fr/",
- "entries": [
+	"description": "Table of known Tensor decomposition ranks and associated complexity exponents indexed by unordered matrix multiplication formats (sorted ascending by convention)",
+	"source": "https://fmm.univ-lille.fr/",
+	"contributor": "https://orcid.org/0000-0003-3225-8631",
+	"createdAt": "2026-08-17T21:37:55",
+	"entries": [
 		{ "format": [2,2,2], "rank": 7, "exponent": 2.807355 },
 		{ "format": [2,2,3], "rank": 11, "exponent": 2.894952 },
 		{ "format": [2,2,4], "rank": 14, "exponent": 2.855516 },
@@ -3364,7 +3366,7 @@
 		{ "format": [10,21,26], "rank": 3286, "exponent": 2.822975 },
 		{ "format": [10,21,27], "rank": 3395, "exponent": 2.821975 },
 		{ "format": [10,21,28], "rank": 3486, "exponent": 2.819294 },
-		{ "format": [10,21,29], "rank": 3658, "exponent": 2.824521 },
+		{ "format": [10,21,29], "rank": 3628, "exponent": 2.821686 },
 		{ "format": [10,21,30], "rank": 3716, "exponent": 2.818970 },
 		{ "format": [10,21,31], "rank": 3861, "exponent": 2.821521 },
 		{ "format": [10,21,32], "rank": 3952, "exponent": 2.819287 },

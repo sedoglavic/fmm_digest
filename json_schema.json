@@ -12,13 +12,23 @@
       		"format": "uri",
       		"description": "URL of a website presenting/documenting this data."
     	},
+    "contributor": {
+      		"type": "string",
+      		"description": "The contributor's 16-digit ORCID iD in full URI or standard hyphenated format.",
+      		"pattern": "^(https://orcid\\.org/)?\\d{4}-\\d{4}-\\d{4}-\\d{3}[0-9X]$"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The ISO 8601 date and time when this JSON data file was created."
+    },
     "entries": {
       "type": "array",
       "items": { "$ref": "#/$defs/entry" },
       "uniqueItems": true
     }
   },
-  "required": ["entries"],
+  "required": ["entries","contributor","CreatedAt"],
   "additionalProperties": false,
   "$defs": {
     "entry": {
