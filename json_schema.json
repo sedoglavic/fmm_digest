@@ -33,7 +33,7 @@
       "uniqueItems": true
     }
   },
-  "required": ["entries","contributor","CreatedAt"],
+  "required": ["entries","contributor","createdAt"],
   "additionalProperties": false,
   "$defs": {
     "entry": {
